@@ -1,16 +1,19 @@
 /* CSS Document */
 @charset "utf-8";
 
+* {
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     color: #39a6b2;
     font-family: Helvetica, Arial, san-serif;
-    background-color: tomato;
+    background-color: white;
 }
 
 /* apply styles to <header> */
-
-
-    
+   
 header {
     padding: 20px 35px;
     background-color: #39a6b2;  
@@ -21,10 +24,25 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    display: inline;
 }
 
 header a {
     text-decoration: none;
     color: #fce138;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
   }
-  
