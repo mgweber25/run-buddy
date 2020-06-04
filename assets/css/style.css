@@ -128,9 +128,9 @@ footer h2 {
   }
   /* HERO STYLES END */
 
-//*Declarations for all sections*//
+  /*Declarations for all sections*/
 
-.section-title {
+  .section-title {
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
@@ -147,21 +147,25 @@ footer h2 {
     border-color: #39a6b2;
   }
 
+
+
+    /*INTRO*/
+
   .intro {
     text-align: center;
   }
-//*Removing as attributes are combined below
+
+  /*
   .intro h2 {
-    display: inline-block;
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
+    display: inline-block;
     border-bottom: 3px solid #fce138;
   }
-*//
+  */
 
-  
   .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -170,20 +174,24 @@ footer h2 {
     margin: 0 auto;
   }
 
+/*STEPS*/
+
   .steps { 
     text-align: center;
-    background: #fce138;
+    background-color: #fce138;
   }
-//*
+
+  /*
   .steps h2 {
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #39a6b2;
+    display: inline-block;
+    border-bottom: 3px solid #39a6b2;
   }
-  *//
+ */
+
 
   .steps div {
     margin-bottom: 80px;
@@ -209,4 +217,50 @@ footer h2 {
     font-size: 38px;
   }
 
+
+  .trainers {
+    text-align: center;
+  }
+
+  .trainer {
+    width: 900px;
+    margin: 0 auto 30px auto;
+    background: #024e76;
+    color: #fce138;
+    overflow: auto;
+  }
+
+  .trainer img {
+    width: 35%;
+    float: left;
+  }
   
+  .trainer-bio {
+    padding: 35px;
+    float: left;
+    width: 65%;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+
+  .trainer-bio h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  
+  .trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  
+  .trainer-bio p {
+    font-size: 17px;
+    line-height: 1.3;
+  }
