@@ -5,7 +5,7 @@
 
  
 .hero {
-  background-image: url(../assets/images/hero-bg.jpg);
+  background-image: url(../images/hero-bg.jpg);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -13,40 +13,47 @@
   text-align: center;
   margin-bottom: 40px;
 }
-  
 
-/* these two colors will override the ones above in .hero */
-
-.hero-secondary h2 {
-  color: red;
+.hero-secondary {
   text-align: center;
+  border-bottom: 4px solid #fce138;
+  padding: 0px 80px 15px 80px;
 }
 
-  /* secondary page hero */
- 
-  .page-title {
-    color: #fce138;
-    display: inline-block;
-    margin: 0px 80px 15px;
-    font-weight: normal;
-    font-size: 42px;
-    font-style: italic;
-  }
-  
-  .secondary-content {
-    width: 80%;
-    margin: 0 auto;
-    color: #024e76;
+.hero-secondary h2 {
+  color: #fce138;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 42px;
+  font-style: italic;
+}
+
+.secondary-content {
+  width: 80%;
+  margin: 0 auto;
+  color: #024e76;
  }
 
- .secondary-content h3 {
-    font-size: 25px;
-    margin: 20px 0px;
- }
+.secondary-content h3 {
+  font-size: 25px;
+  margin: 20px 0px;
+  text-align: left;
+}
 
- .secondary-content p {
-    font-size: 16px;
-    line-height: 1.5;
-    
- }
+.secondary-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.secondary-content ul {
+  margin: 15px 20px;
+}
+
+.secondary-content li {
+  color: #39a6b2;
+  text-align: left;
+}
+
+
  
