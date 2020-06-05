@@ -1,19 +1,52 @@
 /* CSS Document */
 @charset "utf-8";
 
- /* homepage hero */
- .hero {
-    background-position: bottom;
-    height: auto;
-    text-align: center;
-    margin-bottom: 40px;
-  }
+ 
+
+ 
+.hero {
+  background-image: url(../assets/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  height: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
   
+
+/* these two colors will override the ones above in .hero */
+
+.hero-secondary h2 {
+  color: red;
+  text-align: center;
+}
+
   /* secondary page hero */
-  .hero-secondary {
-    margin: 20px;
-    background-color: black;
-    font-size: 20px;
-    color: red;
+ 
+  .page-title {
+    color: #fce138;
+    display: inline-block;
+    margin: 0px 80px 15px;
+    font-weight: normal;
+    font-size: 42px;
+    font-style: italic;
   }
   
+  .secondary-content {
+    width: 80%;
+    margin: 0 auto;
+    color: #024e76;
+ }
+
+ .secondary-content h3 {
+    font-size: 25px;
+    margin: 20px 0px;
+ }
+
+ .secondary-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    
+ }
+ 
