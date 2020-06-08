@@ -1,71 +1,55 @@
 /* CSS Document */
 @charset "utf-8";
 
-
-.hero {
-  background-position: bottom;
-  height: auto;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
+  .hero {
+    background-position: bottom;
+    height: 40%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 
 
 .hero-secondary {
-  background-image: url(../images/hero-bg.jpg);
-  background-size: 90%;
-  background-position: bottom;
-  position: relative;
-  margin-left: 0%;
-  margin-right: 0%;   
+  padding: 0px 80px 15px;
+  border-bottom: 4px solid #fce138;
+  margin-left: 800px;
+  margin-right: 800px;
 
-  }
+}
 
 .page-title {
+  display: inline-block;
   color: #fce138;
-  
-  border-bottom: 4px solid #fce138;
-  padding: 0px 80px 15px 80px;
   font-weight: normal;
   font-size: 42px;
   font-style: italic;
+  width: max-content;
+      }
+
   
-    
-}
- #privacybox {
-  display: inline-block;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-bottom: 6%;
-
- }
-
-
-.hero-content {
-  margin: 10px 10%;
-  
+.secondary-content {
+  width: 80%;
+  margin: 0px 10%;
   color: #024e76;
  }
 
-.hero-content h3 {
-
+.secondary-content h3 {
   font-size: 25px;
   margin: 20px 0px;
   text-align: left;
 }
 
-.hero-content p {
+.secondary-content p {
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
 }
 
-.hero-content ul {
+.secondary-content ul {
   margin: 15px 20px;
 }
 
-.hero-content li {
+.secondary-content li {
   color: #39a6b2;
   text-align: left;
 }
