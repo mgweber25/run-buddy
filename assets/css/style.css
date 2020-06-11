@@ -63,16 +63,16 @@ header nav ul li a {
 
 footer {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    background: #fce138;
+    justify-content: space-between;
+    background-color: #024e76;
     width: 100%;
     padding: 40px 35px;
 }
 
 footer h2 {
   /*  display: inline; */
-    color: #024e76;
+    color: #fce138;
     font-size: 30px;
     margin: 0;
   }
@@ -84,7 +84,7 @@ footer h2 {
   }
 
   footer a {
-    color: #024e76;
+    color: #fce138;
   }
 
   section {
@@ -204,7 +204,7 @@ footer h2 {
   .intro p {
     text-align: center;
     line-height: 1.7;
-    color: #39a6b2;
+    color:#39a6b2;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
@@ -215,13 +215,14 @@ footer h2 {
 
   .steps { 
      background-color: #fce138;
+     padding: 0;
   }
 
   .step {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid  #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -284,7 +285,7 @@ footer h2 {
 
   .trainers {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -333,25 +334,42 @@ footer h2 {
 /* REACH OUT STYLES START */
           /*  text-align: center;*/
 
-  .contact {
-     background: #024e76;
+
+.contact {
+  display: flex;
+  background: #024e76;
+  }
+        
+  .contact h2 {
+    justify-content: center;
+    flex-wrap: wrap; 
+    flex: 5 60%;
+    color: #fce138;
+    }
+
+  .contact-info * {
+    flex: 1;
+    margin: 15px;
+    }
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
   }
 
-  .contact h2 {
-    color: #fce138;
+  .contact-info > * {
+    flex: 1;
+    margin: 15px;
   }
 
   .contact-info iframe {
-    width: 400px;
+    flex: .08% 30%;
     height: 400px;
   }
   
   .contact-info div {
-    width: 410px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;
     color: white;
   }
 
@@ -380,67 +398,33 @@ footer h2 {
 }
 
 
-.contact-input {
-  border: 1px solid #024e76;
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: #024e76;
-  width: 50%;
-  margin-bottom: 15px;
-}
-
-.email-input {
-  border: 1px solid #024e76;
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: #024e76;
-  width: 50%;
-  margin-bottom: 15px;
-}
-
-.message-input {
-  border: 1px solid #024e76;
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: #024e76;
-  width: 20%;
-  margin-bottom: 15px;
-}
-
-
 /*
+.contact-form #email {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 50%;
+  margin-bottom: 15px;
+}
+*/
 
-.hero-form {
-    border: solid 3px #024e76;
-    background-color: #fce138;
-    padding: 20px;
-    width: 40%;
-    margin: 3.5%;
-    color: #024e76;
-  }
+.contact-form {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 35%;
+  margin-bottom: 15px;
+}
 
-  .hero-form h3 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .hero-form p {
-    margin: 5px 0 15px 0;
-  }
-  
-  .hero-form label {
-    margin: 0 5px;
-  }
+.contact-form button {
+  color:#024e76 ;
+  background-color: #fce138;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
 
-  .hero-form button {
-    color: #fce138;
-    background-color: #024e76;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  */
