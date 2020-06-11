@@ -161,12 +161,12 @@ footer h2 {
 
   .section-title {
     padding-bottom: 20px;
-    margin: 0 auto 35px auto;
-    text-align: center;
+    margin: 0 auto 35px;
+    
     width: 50%;
     font-size: 48px;
     color: #024e76;
-    display: inline-block;
+    
     border-bottom: 3px solid;
   }
   
@@ -289,10 +289,7 @@ footer h2 {
 
 /* REACH OUT STYLES START */
 
-
-
   .contact {
-    display: center;
     background: #024e76;
   }
         
@@ -301,68 +298,60 @@ footer h2 {
     color: #fce138;
     }
 
-    .contact-info {
-      flex: 1;
+  .contact-info {
+    flex: 1 100%;
   }
-  
+
+  .contact-info h3 {
+    flex:1 30%;
+    flex-wrap: wrap;
+    font-size: 28px;
+    color: #fce138;
+    text-align: center;
+  }
+
+  /*
   .contact-info * {
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
-    margin: 0 auto;
+    flex: 1 60%;
+    text-align: center;
     }
+*/
+
+    .contact-info p, address {
+      margin: 15px 0;
+      line-height: 1.5;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+    }
+    
 
 
+    .contact-info a {
+      color: #fce138;
+      text-decoration: none;
+    }
   
 
-  
+  /*
   .contact-info > * {
-      margin: 0 auto;
+      display: flex;
   }
  
-
-  .contact-info iframe {
-    color: white;
-    display: block;
-    margin: 0 auto;
-  }
-  
-
-  .contact-info h3 {
-    font-size: 35px;
-    text-align: center;
-    color: #fce138;
-  }
-  
-  .contact-info p, .contact-info address {
-    margin: 20px 0;
-    width: 100%;
-    line-height: 1.5;
-    font-size: 20px;
-    font-weight: strong;
-    text-align: center;
-    color: #fce138;
-  }
-  
-
-  .contact-info a {
-    color: #fce138;
-    text-decoration: none;
-  }
+*/
   
 /* REACH OUT STYLES END */
 
-/* FLEX-ROW */
 
-.flex-row {
-  display: flex;
-}
 
 .contact-form {
   margin: 15px 10px 30px;
 }
 
 .contact-form input, textarea {
+  
   border-radius: 10px;
   border: 1px solid #024e76;
   display: flex;
@@ -373,6 +362,7 @@ footer h2 {
   margin: 20px 0;
   }
 
+/*
 .contact-form button {
   border-radius: 10px;
   width: 100%;
@@ -381,8 +371,19 @@ footer h2 {
   font-size: 16px;
   background: #fce138;
 }
+*/
+.contact-info iframe {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+}
 
 
+/* FLEX-ROW */
+
+.flex-row {
+  display: flex;
+}
 
 .privacy {
   color: #fce138;
