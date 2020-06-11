@@ -1,6 +1,8 @@
 /* CSS Document */
 @charset "utf-8";
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +50,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
   }
@@ -84,22 +86,24 @@ footer h2 {
   }
 
 /* Hero Style Start */
+
   .hero {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
+    align-items: flex-start;
   }
 
-/*Hero-cta start*/
+
   .hero-cta {
     width: 35%;
     text-align: right;
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
   }
 
   .hero-cta h2 {
@@ -160,7 +164,7 @@ footer h2 {
     margin: 0 auto 35px auto;
     text-align: center;
     width: 50%;
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     display: inline-block;
     border-bottom: 3px solid;
@@ -373,4 +377,28 @@ footer h2 {
 
 .privacy {
   color: #fce138;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header h1 a {
+    /* this will be applied on any screen smaller than 980px */
+    color: tomato;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575px */
+    font-size: 80px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /* this will be applied on any screen smaller than 575px */
+    font-size: 100px;
+  }
 }
