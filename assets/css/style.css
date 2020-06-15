@@ -306,7 +306,7 @@ footer h2 {
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex: 1;
 }
