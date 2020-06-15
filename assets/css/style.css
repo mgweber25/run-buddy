@@ -59,14 +59,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #024e76;
+    background-color:#fce138;
     width: 100%;
     padding: 40px 35px;
 }
 
 footer h2 {
   /*  display: inline; */
-    color: #fce138;
+    color: #024e76;
     font-size: 30px;
     margin: 0;
   }
@@ -78,7 +78,7 @@ footer h2 {
   }
 
   footer a {
-    color: #fce138;
+    color:  #024e76;
   }
 
   section {
@@ -381,7 +381,7 @@ margin: 15px 0px;
 */
 
 .privacy {
-color: #fce138;
+color: black;
 }
 
  /* MEDIA QUERY FOR SCREENS 980px AND SMALLER */
@@ -409,7 +409,7 @@ color: #fce138;
 
   footer h2, footer div {
     text-align: center;
-    width: 100%;
+    width: 90%;
   }
   .hero-cta, .hero-form {
     width: 100%;
@@ -437,9 +437,10 @@ color: #fce138;
   /* this will be applied on any screen between 768px and 575px */
 
 @media screen and (max-width: 768px) {
+  /*
   .steps {
     padding: 30px 15px;
-  }
+  }*/
 
   .step h3 {
     flex: 1 100%;
