@@ -87,13 +87,13 @@ footer h2 {
 
 /* Hero Style Start */
 
-  .hero {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    align-items: flex-start;
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  align-items: flex-start;
   }
 
 
@@ -163,6 +163,7 @@ footer h2 {
     padding-bottom: 20px;
     margin: 0 auto 35px;
     text-align: center;
+    flex-wrap: wrap;
     width: 50%;
     font-size: 48px;
     color: #024e76;
@@ -308,7 +309,8 @@ footer h2 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  flex: 1;
+  flex: 1 1 0%;
+  
 }
 
 .contact-info > * {
@@ -316,21 +318,20 @@ footer h2 {
   margin: 15px;
 }
 
-.contact-info iframe {
-  flex: 1;
-}
 
 .contact-info div {
   color: white;
 }
 
 .contact-info h3 {
+  text-align: center;
   color: #fce138;
   font-size: 32px;
+  margin: auto;
 }
 
 .contact-info p, .contact-info address {
-  margin: 20px 0;
+  margin: auto;
   width: 100%;
   line-height: 1.5;
   font-size: 20px;
@@ -371,6 +372,13 @@ text-align: center;
 padding: 15px 0;
 font-size: 16px;
 }
+
+/*
+.contact-form {
+margin: 15px 0px;
+}
+
+*/
 
 .privacy {
 color: #fce138;
@@ -419,15 +427,9 @@ color: #fce138;
     flex: 0 70%;
   }
   
-  .content-info address {
-    text-align: center;
-  }
 
   .contact-info iframe {
-    display: block;
     flex: 1 100%;
-    flex-wrap: wrap;
-    margin: 0 auto;
   }
 }
 
@@ -435,7 +437,7 @@ color: #fce138;
   /* this will be applied on any screen between 768px and 575px */
 
 @media screen and (max-width: 768px) {
-  section {
+  .steps {
     padding: 30px 15px;
   }
 
@@ -464,11 +466,31 @@ color: #fce138;
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 
-/*
+
 @media screen and (max-width: 575px) {
-  header h1 {
-    /* this will be applied on any screen smaller than 575px 
-    font-size: 100px;
+
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
   }
 }
-*/
+
