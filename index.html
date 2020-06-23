@@ -19,119 +19,121 @@
 
 <body>
 <!-- navigation Box 1-->
-<div>
-    <header>
-        <h1>
-            <a href="./index.html">RUN BUDDY</a>
-        </h1>
-        <nav>
-            <!-- Unordered list element -->
-            <ul>
-    <!-- List item element-->
-              <li>
-      <!-- Anchor element -->
-                 <a href="#what-we-do">What We Do</a>
-              </li>
-              <li>
-                 <a href="#what-you-do">What You Do</a>
-              </li>
-              <li>
-                 <a href="#your-trainers">Your Trainers</a>
-              </li>
-              <li>
-                <a href="#service-plans">Service Plans</a>
-              </li>
-              <li>
-                 <a href="#reach-out">Reach Out</a>
-              </li>
-            </ul>
-        </nav>
-    </header>
+    
+        <header>
+            <h1>
+                <a href="./index.html">RUN BUDDY</a>
+            </h1>
+            <nav>
+                <!-- Unordered list element -->
+                <ul>
+        <!-- List item element-->
+                <li>
+        <!-- Anchor element -->
+                    <a href="#what-we-do">What We Do</a>
+                </li>
+                <li>
+                    <a href="#what-you-do">What You Do</a>
+                </li>
+                <li>
+                    <a href="#your-trainers">Your Trainers</a>
+                </li>
+                <li>
+                    <a href="#service-plans">Service Plans</a>
+                </li>
+                <li>
+                    <a href="#reach-out">Reach Out</a>
+                </li>
+                </ul>
+            </nav>
+        </header>
+            
+    <!-- Parent - hero section (row w/ 2 containers-->
+        <div>
+            <section class="hero">
         
-<!-- Parent - hero section (row w/ 2 containers-->
-    <section class="hero">
-   
-        <!-- 1st container (child)-->
-      <div class="hero-cta">
-          <div class="flex-row">
-                <h2>Start Building Habits.</h2>
-          </div>
-          <p>
-              seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
-              messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
-              Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
-              tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
-              probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
-          </p>
-      </div>
-        
-    <!--2nd container (2nd child)-->  
-            <!--"hero-form" is class name of top right form-->
-        <div class="hero-form">
-          <div class="flex-row">
-            <h3>Get Started Today</h3>
-          </div>
-            <p>Fill out this form and one of our trainers will schedule a consult
-            </p>
-                </br>
-               
-               <!-- Top right yellow form attributes--> 
-               <form>
-                        <label for="name">Your Name:</label>
-                        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
-
-                        <label for="email">Your Email:</label>
-                        <input type="text" placeholder="Email Address" name="email" id="email" class="form-input">
-
-                        <label for="phone">Phone Number:</label>
-                        <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+                <!-- 1st container (child)-->
+            <div class="hero-cta">
+                <div class="flex-row">
+                        <h2>Start Building Habits.</h2>
+                </div>
+                <p>
+                    seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
+                    messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
+                    Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
+                    tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
+                    probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
+                </p>
+            </div>
+                
+            <!--2nd container (2nd child)-->  
+                    <!--"hero-form" is class name of top right form-->
+                <div class="hero-form">
+                <div class="flex-row">
+                    <h3>Get Started Today</h3>
+                </div>
+                    <p>Fill out this form and one of our trainers will schedule a consult
+                    </p>
+                        </br>
                     
-                    <p>Have you worked out with a trainer before?
-                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
-                        <label for="trainer-yes">Yes</label>
+                    <!-- Top right yellow form attributes--> 
+                    <form>
+                                <label for="name">Your Name:</label>
+                                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
 
-                        <input type="radio" name="trainer-confirm" id="trainer-no" />
-                        <label for="trainer-no">No</label>
-                    </p>
-                    <p>
-                        <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
-                        <input type="checkbox" name="age-confirm" id="checkbox" />
-                    </p>
-                <!-- Button to confirm/accept info-->
-                    <button type="submit">Get Running!</button>
-                </form>
+                                <label for="email">Your Email:</label>
+                                <input type="text" placeholder="Email Address" name="email" id="email" class="form-input">
+
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+                            
+                            <p>Have you worked out with a trainer before?
+                                <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                                <label for="trainer-yes">Yes</label>
+
+                                <input type="radio" name="trainer-confirm" id="trainer-no" />
+                                <label for="trainer-no">No</label>
+                            </p>
+                            <p>
+                                <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
+                                <input type="checkbox" name="age-confirm" id="checkbox" />
+                            </p>
+                        <!-- Button to confirm/accept info-->
+                            <button type="submit">Get Running!</button>
+                        </form>
+                </div>
+            </section>      
         </div>
-    </section>      
-</div>
-<!-- End Hero-->
+    <!-- End Hero-->
 
 
 <!-- "what we do" section  Box 2-->
-<div>
-    <section id="what-we-do" class="intro">
-        <div class="flex-row">
-            <h2 class="section-title primary-border">
-                What We Do
-            </h2>
-        </div>
-        <div class="flex-row">
-            <p>
-                butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-            </p>
-        </div>
-    </section>
-
-<!-- "what you do" section Box 3-->
         <div>
-            <section id="what-you-do" class="steps">
+            <section id="what-we-do" class="intro">
                 <div class="flex-row">
+                    <h2 class="section-title primary-border">
+                        What We Do
+                    </h2>
+                </div>
+                <div class="flex-row">
+                    <p>
+                        butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+                    </p>
+                </div>
+            </section>
+        </div>
+<!-- "what you do" section Box 3-->
+        
+        <section id="what-you-do" class="steps">
+            <div class="flex-row">
                     <h2 class="section-title secondary-border">
                         What You Do
                     </h2>
-                </div>
+            </div>
                 
-        <!-- Step 1 image -->
-                <div class="step">
+                <!-- Step 1 image -->
+                       
+            <div class="step">
                     <h3>
                         Step 1.
                     </h3>
@@ -141,18 +143,18 @@
                             </div>
                             <div class="step-text">
                                 <h4>
-                                    Fill Out The Form Above
+                                Fill Out The Form Above
                                 </h4>
                                     <p>
                                         You're already here, so why not?
                                     </p>
                             </div>
                         </div>
-                </div>
+            </div>
                 
-        <!-- Step 2 image --> 
+                    <!-- Step 2 image --> 
 
-                <div class="step">
+            <div class="step">
                     <h3>
                         Step 2.
                     </h3>
@@ -169,11 +171,11 @@
                                     </p>
                             </div>
                         </div>
-                </div>
+            </div>
                 
-        <!-- Step 3 image -->       
-
-                <div class="step">
+                <!-- Step 3 image -->       
+        
+            <div class="step">
                     <h3>
                         Step 3.
                     </h3>
@@ -190,97 +192,97 @@
                                     </p>
                             </div>
                         </div>
+            </div>
+                
+                <!-- Step 4 image -->
+                
+            <div class="step">
+                    <h3>
+                        Step 4.
+                    </h3>
+                        <div class="step-info">
+                            <div class="step-img">
+                                <img src="./assets/images/step-4.svg" alt="" />
+                            </div>
+                            <div class="step-text">
+                                <h4>
+                                    See Results.
+                                </h4>
+                                    <p>
+                                        Bi-weekly checkins with your trainer will keep you focused.
+                                    </p>
+                            </div>
+                        </div>
+            </div>        
+        
+        </section>
+        
+    
+    <!-- "meet the trainers" section Box 4-->
+        <div>
+            <section id="your-trainers">
+                <div class="flex-row">
+                    <h2 class="section-title primary-border">
+                        Meet The Trainers
+                    </h2>
                 </div>
-                
-        <!-- Step 4 image -->
-                
-                    <div class="step">
-                        <h3>
-                            Step 4.
-                        </h3>
-                            <div class="step-info">
-                                <div class="step-img">
-                                    <img src="./assets/images/step-4.svg" alt="" />
+                <div class="trainers">
+            <!--Trainer 1:Aaron Stephens-->
+                    <article class="trainer">
+                        <img src="./assets/images/trainer-1.jpg" alt="Aaron Stephens in his workout clothes, ready to pump iron" />
+                            <div class="trainer-bio">
+                                <div class="flex-row">
+                                    <h3 class="trainer-name">
+                                        Aaron Stephens
+                                    </h3>
                                 </div>
-                                <div class="step-text">
-                                    <h4>
-                                        See Results.
+                                    <h4 class="trainer-role">
+                                        Speed / Strength
                                     </h4>
                                         <p>
-                                            Bi-weekly checkins with your trainer will keep you focused.
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
                                         </p>
-                                </div>
                             </div>
-                    </div>
-        
-    <!-- "meet the trainers" section Box 4-->
-            <div>
-                <section id="your-trainers">
-                    <div class="flex-row">
-                        <h2 class="section-title primary-border">
-                            Meet The Trainers
-                        </h2>
-                    </div>
-                    <div class="trainers">
-            <!--Trainer 1:Aaron Stephens-->
-                        <article class="trainer">
-                            <img src="./assets/images/trainer-1.jpg" alt="Aaron Stephens in his workout clothes, ready to pump iron" />
-                                <div class="trainer-bio">
-                                    <div class="flex-row">
-                                        <h3 class="trainer-name">
-                                            Aaron Stephens
-                                        </h3>
-                                    </div>
-                                        <h4 class="trainer-role">
-                                            Speed / Strength
-                                        </h4>
-                                            <p>
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-                                                itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                                            </p>
-                                </div>
-                        </article>
+                    </article>
 
                 <!-- 2nd trainer bio:Joanna Gill -->
-                        <article class="trainer">
-                            <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
-                                <div class="trainer-bio">
-                                    <div class="flex-row">
-                                        <h3 class="trainer-name">
-                                            Joanna Gill
-                                        </h3>
-                                    </div>
-                                        <h4 class="trainer-role">
-                                            Endurance
-                                        </h4>
-                                            <p>
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-                                                itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                                            </p>
+                    <article class="trainer">
+                        <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+                            <div class="trainer-bio">
+                                <div class="flex-row">
+                                    <h3 class="trainer-name">
+                                        Joanna Gill
+                                    </h3>
                                 </div>
-                        </article>
+                                    <h4 class="trainer-role">
+                                        Endurance
+                                    </h4>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                                        </p>
+                            </div>
+                    </article>
                 
                 <!-- 3rd trainer bio:Harry Smith -->
-                        <article class="trainer">
-                            <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
-                                <div class="trainer-bio">
-                                    <div class="flex-row">
-                                        <h3 class="trainer-name">
-                                            Harry "the Headband" Smith
-                                        </h3>
-                                    </div>
-                                        <h4 class="trainer-role">
-                                            Strength
-                                        </h4>
-                                            <p>
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-                                                itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                                            </p>
+                    <article class="trainer">
+                        <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+                            <div class="trainer-bio">
+                                <div class="flex-row">
+                                    <h3 class="trainer-name">
+                                        Harry "the Headband" Smith
+                                    </h3>
                                 </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
+                                    <h4 class="trainer-role">
+                                        Strength
+                                    </h4>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                                        </p>
+                            </div>
+                    </article>
+                </div>
+            </section>
+        </div>
 
 <!-- "reach out" section Box 5 -->
             <div>
@@ -388,10 +390,11 @@
                                     <input type="text" id="contact-name" placeholder="Your Name" />
                                     
                                     <label for="email"></label>
-                                    <input type="text" id="email" placeholder="Email Address">                                    
+                                    <input type="text" id="email" placeholder="Email Address">                            
                                     
-                                    <label for="contact-message" ></label>
-                                    <textarea type="text" id="contact-message" placeholder="Message" rows="5" > </textarea>
+                                    
+                                    <textarea rows="5" placeholder="Type Message Here">
+                                    </textarea>
                             
                                     <button type="submit">
                                         Submit
@@ -405,27 +408,23 @@
                             </iframe>
                         </div>
                       </div>
-                </div>
-        <!--RUN BUDDY ADDRESS-->                    
-<!-- footer (Bottom of Box 2) -->
+                </div>                 
+        <!-- Footer  -->
 
-            <footer>
-                <div class="flex-row">
-                    <h2>
-                        ❤️ Made with love by Run Buddy.
-                    </h2> 
-                </div> 
+        <footer>
+            <div class="flex-row">
+                <h2>
+                    ❤️ Made with love by Run Buddy.
+                </h2> 
+            </div> 
+    <!-- This will take us to our own site's privacy policy HTML page -->  
+            <div class="privacy">
+                <a href="./privacy_policy.html">Read Our Privacy Policy</a><br />
+                &copy; 2019 Run Buddy, Inc.
+            </div>  
+                
+        </footer>
 
-                    <!-- This will take us to our own site's privacy policy HTML page -->  
-                <div class="privacy">
-                    <a href="./privacy_policy.html">Read Our Privacy Policy</a><br />
-                    &copy; 2019 Run Buddy, Inc.
-                </div>
-                
-                
-            </footer>
-   
-        </div>
-    </body>
+</body>
 
 </html>
