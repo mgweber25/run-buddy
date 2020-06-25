@@ -366,6 +366,7 @@ section {
   flex:1;
   background: #024e76;
   color: #fce138;
+  overflow: hidden;
 }
 
 .trainer-bio {
@@ -375,12 +376,14 @@ section {
 
 .trainer-bio h3 {
   font-size: 28px;
+  display: none;
 }
   
 .trainer-bio h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
+  display: none;
 }
   
 .trainer-bio p {
@@ -401,7 +404,6 @@ section {
   background-image: url("../images/trainer-3.jpg");
 }
 
-
 .trainer-img {
   width: 100%;
   min-height: 300px;
@@ -412,77 +414,36 @@ section {
   left: 0;
   padding: 15px;
   align-items: flex-end;
-  
-  
 }
   
-.trainer-img::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: rgba(252, 225, 56, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.trainer-img:hover {
-  background: rgba(252, 225, 56, 1);
-}
-
-
-/*
-.checkbox-wrapper label::before, .radio-wrapper label::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid #024e76;  
-  position: absolute;
-  top: -4px;
-  left: -30px;
-}
-
-.radio-wrapper label::before {
-  border-radius: 50%;
-}
-
-.radio-wrapper label::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #024e76;
-  position: absolute;
-  left: -29px;
-  top: -3px;
-  background-image: radial-gradient(circle, #39a6b2, #024e76);
-}
-
-.checkbox-wrapper label::after {
-  content: "";
-  height: 6px;
-  width: 14px;
-  border-left: 2px solid #024e76;
-  border-bottom: 2px solid #024e76;
-  position: absolute;
-  left: -26px;
-  top: 1px;
-  transform: rotate(-58deg);
-}
-*/
-
-
 .trainer-img h3 {
   font-size: 28px;
   position: relative;
-  z-index: auto;
+  margin-bottom: 5px;
+  top: 800px;
 }
 
 .trainer-img h4 {
+  font-weight: lighter;
   font-size: 22px;
   position: relative;
-  z-index: auto;
+  top: 800px;
+}
+
+.trainer:hover .trainer-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(2, 78, 118, 0.5);
+  background: linear-gradient(1deg, rgba(2, 78, 118, 1) 0%, rgba(2, 78, 118, 0.6) 35%, rgba(2, 78, 118, 0.1) 100%);
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+  top: 0px;
+  z-index: 9998;
 }
 
 /*CSS Grid section */
@@ -558,11 +519,10 @@ section {
   }
 
 .contact-info {
+  text-align: center;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   flex: 1 1 0%;
-  
 }
 
 .contact-info > * {
@@ -616,6 +576,7 @@ section {
 }
 
 /* create a new css rule for focus state */
+
 .contact-form input:focus, .contact-form textarea:focus {
   background-color: rgba(255,255,255, 1);
 }
@@ -636,13 +597,6 @@ section {
   color: #fce138;
   background: #39a6b2;
 }
-
-/*
-.contact-form {
-margin: 15px 0px;
-}
-
-*/
 
 .privacy {
   color: black;
@@ -709,10 +663,52 @@ margin: 15px 0px;
   /* this will be applied on any screen between 768px and 575px */
 
 @media screen and (max-width: 768px) {
-  /*
-  .steps {
-    padding: 30px 15px;
-  }*/
+ 
+  .trainer-bio h3 {
+    font-size: 28px;
+    display: block;
+  }
+    
+  .trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .trainer-img h3 {
+    font-size: 28px;
+    position: relative;
+    margin-bottom: 5px;
+    top: 800px;
+    display: none;
+  }
+  
+  .trainer-img h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    position: relative;
+    top: 800px;
+    display: none;
+  }
+  
+  .trainer:hover .trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(2, 78, 118, 0.5);
+    background: linear-gradient(1deg, rgba(2, 78, 118, 1) 0%, rgba(2, 78, 118, 0.6) 35%, rgba(2, 78, 118, 0.1) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: none;
+  }
+  
+  .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+    z-index: 9998;
+    display: none;
+  }
 
   .step h3 {
     flex: 1 100%;
